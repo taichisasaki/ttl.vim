@@ -1,3 +1,3 @@
-ttl.vim
-  Vim syntax file for Tera Term Language (TTL)
-=======
+#### ttl.vim
+Vim syntax file for Tera Term Language (TTL)  
+    
