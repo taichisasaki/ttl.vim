@@ -2,7 +2,7 @@
 " Language:	Tera Term Language (TTL)
 " Maintainer:	Taichi Sasaki
 " URL:		http://github.com/taichisasaki/ttl.vim
-" Last Change:	2012 August 10
+" Last Change:	2012 August 14
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -23,8 +23,8 @@ endif
 syn match   ttlLineComment  ";.*$"
 syn region  ttlComment      start="/\*" end="\*/"
 
-syn region  ttlStringD      start=+"+ skip=+\\\\\|\\"+ end=+"\|$+
-syn region  ttlStringS      start=+'+ skip=+\\\\\|\\'+ end=+'\|$+
+syn region  ttlStringD      start=+"+ skip=+\\\\+ end=+"\|$+
+syn region  ttlStringS      start=+'+ skip=+\\\\+ end=+'\|$+
 syn match   ttlNumber       "-\=\<\d\+\>"
 
 syn keyword ttlIdentifier   groupmatchstr1 groupmatchstr2 groupmatchstr3
